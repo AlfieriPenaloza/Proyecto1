@@ -49,10 +49,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\CLionProjects\Clase\Proyecto1
+CMAKE_SOURCE_DIR = C:\CLionProjects\github\proyecto1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\CLionProjects\Clase\Proyecto1\cmake-build-debug
+CMAKE_BINARY_DIR = C:\CLionProjects\github\proyecto1\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -81,9 +81,9 @@ edit_cache\fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\CLionProjects\Clase\Proyecto1\cmake-build-debug\CMakeFiles C:\CLionProjects\Clase\Proyecto1\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\CLionProjects\github\proyecto1\cmake-build-debug\CMakeFiles C:\CLionProjects\github\proyecto1\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\CLionProjects\Clase\Proyecto1\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\CLionProjects\github\proyecto1\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -151,6 +151,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles\Proyecto1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Proyecto1.dir\main.cpp.s
 .PHONY : main.cpp.s
 
+slot.obj: slot.cpp.obj
+
+.PHONY : slot.obj
+
+# target to build an object file
+slot.cpp.obj:
+	$(MAKE) -f CMakeFiles\Proyecto1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Proyecto1.dir\slot.cpp.obj
+.PHONY : slot.cpp.obj
+
+slot.i: slot.cpp.i
+
+.PHONY : slot.i
+
+# target to preprocess a source file
+slot.cpp.i:
+	$(MAKE) -f CMakeFiles\Proyecto1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Proyecto1.dir\slot.cpp.i
+.PHONY : slot.cpp.i
+
+slot.s: slot.cpp.s
+
+.PHONY : slot.s
+
+# target to generate assembly for a file
+slot.cpp.s:
+	$(MAKE) -f CMakeFiles\Proyecto1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Proyecto1.dir\slot.cpp.s
+.PHONY : slot.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -163,6 +190,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... slot.obj
+	@echo ... slot.i
+	@echo ... slot.s
 .PHONY : help
 
 
