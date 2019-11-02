@@ -6,7 +6,14 @@
 #define PROYECTO1_SLOT_H
 #include "tipos.h"
 
-class slot {
+class slot_t {
+private:
+    cant* vector_posicion;
+public:
+    slot_t(cant);
+    void subir_bajar(truofal);
+    void entregar(truofal);
+    void pedir_recibir(truofal);
 
 };
 

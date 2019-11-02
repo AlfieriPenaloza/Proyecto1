@@ -4,10 +4,16 @@
 
 #ifndef PROYECTO1_TIPOS_H
 #define PROYECTO1_TIPOS_H
+
 typedef int codigo;
 typedef int largo;
 typedef int ancho;
 typedef double peso;
+
+// de aqui en adelante
+#include <vector>
+typedef int cant;
+typedef bool truofal;
 
 
 
