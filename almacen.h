@@ -9,12 +9,12 @@
 class CAlmacen {
 private:
     numero_t cajas;
-    numero_t columnas;
-    numero_t filas;
+    size_t columnas;
+    size_t filas;
     numero_t profundidad;
 
 public:
-    CAlmacen();//constructor por defecto
+    CAlmacen(numero_t cajas, size_t columnas, size_t filas, numero_t profundidad);//constructor por defecto
     void crear_profundidad();
 
     void distribuir();

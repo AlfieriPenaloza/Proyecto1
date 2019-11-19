@@ -5,16 +5,15 @@
 
 
 
-COrden::CAlmacen() {
+COrden::CAlmacen(numero_t cajas, size_t columnas, size_t filas, numero_t
+profundidad):cajas{total_cajas}, filas{nf},columnas{nc},profundidad{profundidad} {
+}
+
+void crear_profundidad(){
 
 }
 
-COrden::CAlmacen(numero_t filas, numero_t columnnas) {
-
-
-}
-
-numero_t CAlmacen::distribuir(){
+void CAlmacen::distribuir(){
     return ;
 }
 
