@@ -49,10 +49,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\CLionProjects\github\proyecto1
+CMAKE_SOURCE_DIR = C:\CLionProjects\github\Proyecto1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\CLionProjects\github\proyecto1\cmake-build-debug
+CMAKE_BINARY_DIR = C:\CLionProjects\github\Proyecto1\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -81,9 +81,9 @@ edit_cache\fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\CLionProjects\github\proyecto1\cmake-build-debug\CMakeFiles C:\CLionProjects\github\proyecto1\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\CLionProjects\github\Proyecto1\cmake-build-debug\CMakeFiles C:\CLionProjects\github\Proyecto1\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) -f CMakeFiles\Makefile2 /nologo -$(MAKEFLAGS) all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\CLionProjects\github\proyecto1\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\CLionProjects\github\Proyecto1\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -124,6 +124,33 @@ Proyecto1\fast:
 	$(MAKE) -f CMakeFiles\Proyecto1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Proyecto1.dir\build
 .PHONY : Proyecto1\fast
 
+almacen.obj: almacen.cpp.obj
+
+.PHONY : almacen.obj
+
+# target to build an object file
+almacen.cpp.obj:
+	$(MAKE) -f CMakeFiles\Proyecto1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Proyecto1.dir\almacen.cpp.obj
+.PHONY : almacen.cpp.obj
+
+almacen.i: almacen.cpp.i
+
+.PHONY : almacen.i
+
+# target to preprocess a source file
+almacen.cpp.i:
+	$(MAKE) -f CMakeFiles\Proyecto1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Proyecto1.dir\almacen.cpp.i
+.PHONY : almacen.cpp.i
+
+almacen.s: almacen.cpp.s
+
+.PHONY : almacen.s
+
+# target to generate assembly for a file
+almacen.cpp.s:
+	$(MAKE) -f CMakeFiles\Proyecto1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Proyecto1.dir\almacen.cpp.s
+.PHONY : almacen.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -150,6 +177,87 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) -f CMakeFiles\Proyecto1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Proyecto1.dir\main.cpp.s
 .PHONY : main.cpp.s
+
+orden.obj: orden.cpp.obj
+
+.PHONY : orden.obj
+
+# target to build an object file
+orden.cpp.obj:
+	$(MAKE) -f CMakeFiles\Proyecto1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Proyecto1.dir\orden.cpp.obj
+.PHONY : orden.cpp.obj
+
+orden.i: orden.cpp.i
+
+.PHONY : orden.i
+
+# target to preprocess a source file
+orden.cpp.i:
+	$(MAKE) -f CMakeFiles\Proyecto1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Proyecto1.dir\orden.cpp.i
+.PHONY : orden.cpp.i
+
+orden.s: orden.cpp.s
+
+.PHONY : orden.s
+
+# target to generate assembly for a file
+orden.cpp.s:
+	$(MAKE) -f CMakeFiles\Proyecto1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Proyecto1.dir\orden.cpp.s
+.PHONY : orden.cpp.s
+
+producto.obj: producto.cpp.obj
+
+.PHONY : producto.obj
+
+# target to build an object file
+producto.cpp.obj:
+	$(MAKE) -f CMakeFiles\Proyecto1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Proyecto1.dir\producto.cpp.obj
+.PHONY : producto.cpp.obj
+
+producto.i: producto.cpp.i
+
+.PHONY : producto.i
+
+# target to preprocess a source file
+producto.cpp.i:
+	$(MAKE) -f CMakeFiles\Proyecto1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Proyecto1.dir\producto.cpp.i
+.PHONY : producto.cpp.i
+
+producto.s: producto.cpp.s
+
+.PHONY : producto.s
+
+# target to generate assembly for a file
+producto.cpp.s:
+	$(MAKE) -f CMakeFiles\Proyecto1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Proyecto1.dir\producto.cpp.s
+.PHONY : producto.cpp.s
+
+robot.obj: robot.cpp.obj
+
+.PHONY : robot.obj
+
+# target to build an object file
+robot.cpp.obj:
+	$(MAKE) -f CMakeFiles\Proyecto1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Proyecto1.dir\robot.cpp.obj
+.PHONY : robot.cpp.obj
+
+robot.i: robot.cpp.i
+
+.PHONY : robot.i
+
+# target to preprocess a source file
+robot.cpp.i:
+	$(MAKE) -f CMakeFiles\Proyecto1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Proyecto1.dir\robot.cpp.i
+.PHONY : robot.cpp.i
+
+robot.s: robot.cpp.s
+
+.PHONY : robot.s
+
+# target to generate assembly for a file
+robot.cpp.s:
+	$(MAKE) -f CMakeFiles\Proyecto1.dir\build.make /nologo -$(MAKEFLAGS) CMakeFiles\Proyecto1.dir\robot.cpp.s
+.PHONY : robot.cpp.s
 
 slot.obj: slot.cpp.obj
 
@@ -187,9 +295,21 @@ help:
 	@echo ... rebuild_cache
 	@echo ... Proyecto1
 	@echo ... edit_cache
+	@echo ... almacen.obj
+	@echo ... almacen.i
+	@echo ... almacen.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... orden.obj
+	@echo ... orden.i
+	@echo ... orden.s
+	@echo ... producto.obj
+	@echo ... producto.i
+	@echo ... producto.s
+	@echo ... robot.obj
+	@echo ... robot.i
+	@echo ... robot.s
 	@echo ... slot.obj
 	@echo ... slot.i
 	@echo ... slot.s
