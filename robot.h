@@ -5,20 +5,25 @@
 #ifndef PROYECTO1_ROBOT_H
 #define PROYECTO1_ROBOT_H
 
+#include "tipos.h"
 
 class robot_t {
 private:
+    cod_t codigo_rob;
+    vector<vector<numero_t>> pos_inicial;
+    vector<vector<numero_t>> pos_destino;
+    numero_t cant_productos;
+    numero_t bateria;
 
 public:
-    void recepcionar (truefalse)
-    void reconocer (truefalse)
-    void moverse (truefalse)
-    void extraer (truefalse)
-    void esperar_ruta (truefalse)
-    void lista_pedidos (truefalse)
-    void dejar_producto (truefalse)
-    void recargar_bateria (truefalse)
-
+    void recepcionar ();
+    void reconocer ();
+    void moverse ();
+    void extraer ();
+    void esperar_ruta ();
+    void lista_pedidos ();
+    void dejar_producto ();
+    void recargar_bateria ();
 
 };
 

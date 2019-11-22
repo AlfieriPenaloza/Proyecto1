@@ -1,11 +1,10 @@
 //
 // Created by Bruno on 31/10/2019.
 //
-
-#include "tipos.h"
-
 #ifndef PROYECTO1_ALMACEN_H
 #define PROYECTO1_ALMACEN_H
+#include "tipos.h"
+
 class CAlmacen {
 private:
     numero_t cajas;
@@ -20,7 +19,6 @@ public:
     void distribuir();
 
     void crear_matriz();
-
 
 };
 
