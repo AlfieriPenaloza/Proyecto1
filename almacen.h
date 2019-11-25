@@ -11,12 +11,13 @@ private:
     size_t columnas;
     size_t filas;
     numero_t profundidad;
+    vector<vector<numero_t>> distr;
 
 public:
-    CAlmacen(numero_t cajas, size_t columnas, size_t filas, numero_t profundidad);//constructor por defecto
+    CAlmacen(cod_t codigo_prod);//constructor por defecto
     void crear_profundidad();
 
-    void distribuir();
+    vector<vector<numero_t>> ub_producto(cod_t codigo_prod);
 
     void crear_matriz();
 

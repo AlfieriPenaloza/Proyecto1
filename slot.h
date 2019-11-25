@@ -10,8 +10,9 @@ class Cslot {
 private:
     vector<vector<numero_t >> pos_inicial;
 public:
-    Cslot(vector<vector<numero_t >> pos_inicial);
-    void subir_bajar();
+    Cslot();
+    void dar_producto();
+    numero_t get_cantidad();
     void entregar();
     void pedir_recibir();
 

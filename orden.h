@@ -6,15 +6,15 @@
 #define PROYECTO1_ORDEN_H
 
 #include "tipos.h"
-class orden_t{
+class Corden{
 private:
     cod_t codigo;
     numero_t cantidad;
 
 public:
-
+    Corden();
     void pedir_datos();
-    numero_t buscar_ubicacion();
+    void buscar_ubicacion();
     numero_t generar_ubicacion();
     numero_t entregar_ubicacion();
 

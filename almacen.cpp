@@ -3,24 +3,18 @@
 //
 #include "almacen.h"
 
-
-
-COrden::CAlmacen(numero_t cajas, size_t columnas, size_t filas, numero_t
-profundidad):cajas{total_cajas}, filas{nf},columnas{nc},profundidad{profundidad} {
-}
-
-void crear_profundidad(){
+CAlmacen::CAlmacen(cod_t codigo_prod) {
 
 }
 
-void CAlmacen::distribuir(){
-    return ;
+void CAlmacen::crear_profundidad() {
+
 }
 
-numero_t CAlmacen::crear_matriz() {
-    numero_t **pmatriz=nullptr;
-    pmatriz= new numero_t*[filas];
-
-    return pmatriz ;
+vector<vector<numero_t>> CAlmacen::ub_producto(cod_t codigo_prod) {
+    return vector<vector<numero_t>>();
 }
 
+void CAlmacen::crear_matriz() {
+
+}

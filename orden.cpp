@@ -4,25 +4,22 @@
 
 #include "orden.h"
 
-
-COrden::COrden() {
-
-}
-
-COrden::COrden(numero_t filas, numero_t columnnas) {
-
+Corden::Corden() {
 
 }
 
-numero_t COrden::buscar_ubicacion(){
-    return ;
+void Corden::pedir_datos() {
+
 }
 
-numero_t COrden::generar_ubicacion() {
-    return ;
+void Corden::buscar_ubicacion() {
+
 }
 
-numero_t COrden::entregar ubicacion() {
+numero_t Corden::generar_ubicacion() {
+    return 0;
+}
 
-    return ;
+numero_t Corden::entregar_ubicacion() {
+    return 0;
 }

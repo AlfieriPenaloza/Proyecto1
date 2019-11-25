@@ -7,7 +7,7 @@
 
 #include "tipos.h"
 
-class robot_t {
+class Crobot {
 private:
     cod_t codigo_rob;
     vector<vector<numero_t>> pos_inicial;
@@ -16,6 +16,7 @@ private:
     numero_t bateria;
 
 public:
+    Crobot();
     void recepcionar ();
     void reconocer ();
     void moverse ();
