@@ -7,15 +7,19 @@
 
 class CAlmacen {
 private:
-    numero_t cajas;
-    size_t columnas;
-    size_t filas;
-    numero_t profundidad;
+    numero_t _cajas;
+    size_t _columnas;
+    size_t _filas;
+    size_t _profundidad;
     vector<vector<numero_t>> distr;
 
 public:
-    CAlmacen(cod_t codigo_prod);//constructor por defecto
-    void crear_profundidad();
+    CAlmacen(size_t columnas, size_t filas);
+    void slot_prof(size_t profundidad);
+    vector ubi_producto(cod_t prod);
+    numero_t get_cant_cajas();
+    numero_t get_prof();
+
 
     vector<vector<numero_t>> ub_producto(cod_t codigo_prod);
 
