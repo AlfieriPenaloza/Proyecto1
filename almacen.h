@@ -1,4 +1,3 @@
-//
 // Created by Bruno on 31/10/2019.
 //
 #ifndef PROYECTO1_ALMACEN_H
@@ -15,8 +14,10 @@ private:
 
 public:
     CAlmacen(size_t columnas, size_t filas);
+    size_t pedir_datos();
+    void create_vector(size_t columnas, size_t filas);
     void slot_prof(size_t profundidad);
-    vector ubi_producto(cod_t prod);
+    void ubi_producto(cod_t prod);
     numero_t get_cant_cajas();
     numero_t get_prof();
 
