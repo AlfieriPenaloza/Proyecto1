@@ -14,7 +14,7 @@ private:
     numero_t peso;
 
 public:
-    Cproducto(cod_t codigo_prod, numero_t peso);
+    Cproducto(cod_t codigo_prod);
     cod_t informar_codigo (cod_t codigo_prod);
     cod_t informar_peso (numero_t peso);
 

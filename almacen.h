@@ -4,7 +4,7 @@
 #define PROYECTO1_ALMACEN_H
 #include "tipos.h"
 
-class CAlmacen {
+class CAlmacen:public C {
 private:
     numero_t _cajas;
     size_t _columnas;

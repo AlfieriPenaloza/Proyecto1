@@ -10,6 +10,7 @@ class Cslot {
 private:
     numero_t _profundidad;
     vector<vector<numero_t >> pos_inicial;
+    vector<numero_t>
 public:
     Cslot(numero_t profundidad);
     void dar_producto(numero_t cant_pedida);

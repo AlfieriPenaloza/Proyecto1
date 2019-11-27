@@ -10,13 +10,13 @@ class Corden{
 private:
     cod_t codigo;
     numero_t cantidad;
+    numero_t *pubica=distr;
 
 public:
     Corden();
-    void pedir_datos();
-    void buscar_ubicacion();
-    numero_t generar_ubicacion();
-    numero_t entregar_ubicacion();
+    void pedir_datos(cod_t codigo);
+    void buscar_ubicacion(numero_t *pubica);
+    numero_t entregar_ubicacion(numero_t *pubica);
 
 };
 
