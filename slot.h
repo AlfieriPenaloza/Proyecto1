@@ -9,7 +9,7 @@
 class Cslot {
 private:
     numero_t _profundidad;
-    vector<vector<numero_t >> pos_inicial;
+    vector<vector<numero_t >> posicion;
     vector<numero_t>
 public:
     Cslot(numero_t profundidad);

@@ -1,8 +1,9 @@
-#include <iostream>
 #include"slot.h"
+#include "producto.h"
 #include "almacen.h"
 #include "tipos.h"
-using namespace std;
+#include "robot.h"
+
 
 int main() {
     // la orden debe pedirle al usuario que ingrese la cantidad de filas, columnas y la profundidad
@@ -23,6 +24,10 @@ int main() {
     cout << "Ingrese la cantidad de columnas: "; cin >> columnas;
     cout << "Ingrese la cantidad de filas: "; cin >> filas;
     CAlmacen almacen(size_t columnas, size_t filas);
+
+    Crobot robot1;
+    Crobot robot2;
+    Crobot robot3;
 
 
 

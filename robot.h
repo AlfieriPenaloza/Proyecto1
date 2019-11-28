@@ -11,20 +11,19 @@ class Crobot {
 private:
     cod_t codigo_rob;
     vector<vector<numero_t>> pos_inicial;
-    vector<vector<numero_t>> pos_destino;
     numero_t cant_productos;
     numero_t bateria;
+    vector<vector<numero_t >>  posicion;
 
 public:
-    Crobot();
-    void recepcionar ();
-    void reconocer ();
-    void moverse ();
-    void extraer ();
-    void esperar_ruta ();
+    Crobot(vector<vector<numero_t >> *ub_producto, vector<vector<numero_t >> pos_inicial);
+    numero_t posicion_r ();
+    void moverse (vector<vector<numero_t >> *ub_producto);
+    void recibir ();
     void lista_pedidos ();
     void dejar_producto ();
     void recargar_bateria ();
+
 
 };
 
