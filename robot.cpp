@@ -4,56 +4,70 @@
 
 #include "robot.h"
 
+size_t pedir_posicion(string label, string label_2, size_t colum, size_t fil){
+    size_t  var_1,  var_bu;
+    var_bu = 0;
+    while(var_bu == 0) {
+        cout << "Ingrese la posicion inicial en " << label_2 << " del " << label << ":";
+        cin >> var_1;
+        if (var_1 < colum && var_1 >= 0){
+            return var_1;}
+        else
+            cout << "La posicion ingresada es incorrecta." << endl;}
 
-Crobot::Crobot(vector<vector<numero_t >> pos_ini): pos_inicial(pos_ini) {
-}
 
-numero_t Crobot::posicion_r() {
-    return vector<vector<numero_t >> posicion;
-}
-
-void Crobot::moverse(vector<vector<numero_t >> *ub_producto, vector<vector<numero_t >> pos_inicial) {
-    while (robot1.posicion_r()!=*ub_producto){
-        if (robot1.posicion_r()+1!=robot2.posicion_r and robot1.posicion_r()+1!=robot3.posicion_r){
-            robot1  .posicion_r()+=1;
-        }
-        else;
-        robot1.posicion_r()+=2;
-    }
-    if (robot.posicion_r()==pos_inicial){
-        auto entrego = slot[*ub_producto].entregar_producto(cant_productos);
-        if (entrego ==1){
-            while(robot1.posicion_r()!=pos_inicial){
-                if (robot1.posicion_r()+1!=robot2.posicion_r and robot1.posicion_r()+1!=robot3.posicion_r){
-                    robot1.posicion_r()+=1;
-                }
-                else;
-                robot1.posicion_r+=2;
-            }
-        }
-    }
 
 
 }
-
-
-void Crobot::recibir() {
-
-
+Crobot::Crobot(size_t pos_i): _pos_i(pos_i) {
 }
 
-void Crobot::lista_pedidos() {
+//numero_t Crobot::posicion_r() {
+//    return vector<vector<numero_t  posicion;
+//}
 
-}
-
-void Crobot::dejar_producto() {
-
-    if (robot1.posicion_r==[0][0]){
-
-    }
-}
-
-void Crobot::recargar_bateria() {
-
-}
+//void Crobot::moverse(vector<vector<numero_t >> *ub_producto, vector<vector<numero_t >> pos_inicial) {
+//    while (robot1.posicion_r()!=*ub_producto){
+//        if (robot1.posicion_r()+1!=robot2.posicion_r and robot1.posicion_r()+1!=robot3.posicion_r){
+//            robot1  .posicion_r()+=1;
+//        }
+//        else;
+//        robot1.posicion_r()+=2;
+//    }
+//    if (robot.posicion_r()==pos_inicial){
+//        auto entrego = slot[*ub_producto].entregar_producto(cant_productos);
+//        if (entrego ==1){
+//            while(robot1.posicion_r()!=pos_inicial){
+//                if (robot1.posicion_r()+1!=robot2.posicion_r and robot1.posicion_r()+1!=robot3.posicion_r){
+//                    robot1.posicion_r()+=1;
+//                }
+//                else;
+//                robot1.posicion_r+=2;
+//            }
+//        }
+//    }
+//
+//
+//}
+//
+//
+//void Crobot::recibir() {
+//
+//
+//}
+//
+//void Crobot::lista_pedidos() {
+//
+//}
+//
+//void Crobot::dejar_producto() {
+//
+//    if (robot1.posicion_r==[0][0]){
+//
+//    }
+//}
+//
+//void Crobot::recargar_bateria() {
+//
+//}
 

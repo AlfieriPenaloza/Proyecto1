@@ -4,6 +4,20 @@
 #include "almacen.h"
 #include "slot.h"
 
+size_t pedir_datos(string lable) {
+    int dato; int x;
+    x = 0;
+    while( x == 0) {
+        cout << "Ingrese la cantidad de "<< lable <<": "; cin>>dato;
+        if (dato > 0){
+            x = 1;
+            return dato;}
+        else
+            cout<< "Ingrese un dato valido." << endl;
+    }
+}
+
+
 CAlmacen::CAlmacen(size_t columnas, size_t filas): _columnas(columnas), _filas(filas) {
     create_matriz(columnas, filas);
 
@@ -66,16 +80,4 @@ void CAlmacen::create_matriz(size_t columnas, size_t filas) {
 
 
 
-size_t pedir_datos(string lable) {
-    int dato; int x;
-    x = 0;
-    while( x == 0) {
-        cout << "Ingrese la cantidad de "<< lable <<": "; cin>>dato;
-        if (dato > 0){
-            x = 1;
-            return dato;}
-        else
-            cout<< "Ingrese un dato valido." << endl;
-    }
-}
 
