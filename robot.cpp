@@ -4,8 +4,8 @@
 
 #include "robot.h"
 
-Crobot::Crobot(vector<vector<numero_t >> *ub_producto) {
 
+Crobot::Crobot(vector<vector<numero_t >> pos_ini): pos_inicial(pos_ini) {
 }
 
 numero_t Crobot::posicion_r() {
@@ -13,12 +13,12 @@ numero_t Crobot::posicion_r() {
 }
 
 void Crobot::moverse(vector<vector<numero_t >> *ub_producto, vector<vector<numero_t >> pos_inicial) {
-    while (r1.posicion_r()!=*ub_producto){
+    while (robot1.posicion_r()!=*ub_producto){
         if (robot1.posicion_r()+1!=robot2.posicion_r and robot1.posicion_r()+1!=robot3.posicion_r){
             robot1  .posicion_r()+=1;
         }
         else;
-            robot1.posicion_r()+=2;
+        robot1.posicion_r()+=2;
     }
     if (robot.posicion_r()==pos_inicial){
         auto entrego = slot[*ub_producto].entregar_producto(cant_productos);
@@ -28,7 +28,7 @@ void Crobot::moverse(vector<vector<numero_t >> *ub_producto, vector<vector<numer
                     robot1.posicion_r()+=1;
                 }
                 else;
-                    robot1.posicion_r+=2;
+                robot1.posicion_r+=2;
             }
         }
     }
@@ -56,3 +56,4 @@ void Crobot::dejar_producto() {
 void Crobot::recargar_bateria() {
 
 }
+

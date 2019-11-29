@@ -19,6 +19,15 @@ int main() {
     var_str = "filas";
     fil = pedir_datos(var_str);
 
+    //Pide posición inicial de los Robots
+    vector<vector<numero_t>> pos_ini_r1, pos_ini_r2, pos_ini_r3;
+    pos_ini_r1 = pedir_posicion("robot 1");
+    pos_ini_r2 = pedir_posicion("robot 2");
+    pos_ini_r2 = pedir_posicion("robot 3");
+
+    Crobot r1(pos_ini_r1);
+    Crobot r2(pos_ini_r2);
+    Crobot r3(pos_ini_r3);
 
 
 
