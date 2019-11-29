@@ -11,23 +11,14 @@ int main() {
     // columnas = pedir datos();
 
     size_t columnas, filas;
-    int var_bucle = 0;
-    while (var_bucle == 0){
-        cout << "Ingrese la cantidad de columnas: "; cin >> columnas;
-        cout << "Ingrese la cantidad de filas: "; cin >> filas;
-        if (columnas
-        CAlmacen almacen(size_t columnas, size_t filas);
 
-        var_bucle = 1;
 
-    }
-    cout << "Ingrese la cantidad de columnas: "; cin >> columnas;
-    cout << "Ingrese la cantidad de filas: "; cin >> filas;
-    CAlmacen almacen(size_t columnas, size_t filas);
+    size_t colum, fil; string var_str;
+    var_str = "columnas";
+    colum = pedir_datos(var_str);
+    var_str = "filas";
+    fil = pedir_datos(var_str);
 
-    Crobot robot1;
-    Crobot robot2;
-    Crobot robot3;
 
 
 
