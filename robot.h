@@ -16,10 +16,11 @@ private:
     numero_t robot_n;
     numero_t cant_productos;
     numero_t bateria;
-    vector<vector<numero_t >>  posicion;
+    size_t _pos_f;
 
 public:
     Crobot(size_t pos_i);
+
 //    numero_t posicion_r ();
 //    void moverse (vector<vector<numero_t >> *ub_producto);
 //    void recibir ();

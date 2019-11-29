@@ -16,7 +16,6 @@ int main() {
 
     //Pide posición inicial de los Robots
 
-
     posX_1 = pedir_posicion("Robot 1", "X", colum, fil);
     posY_1 = pedir_posicion("Robot 1", "Y", colum, fil);
     size_t pos_i1[2] = {posX_1, posY_1};
@@ -37,9 +36,8 @@ int main() {
          << "Ingrese el nombre del producto a ingresar: "; cin >> product;
     int var_bucle = 0; char f;
 
+
     while(var_bucle == 0){
-
-
 
         cout << "Ingrese F para cerrar el programa: "; cin >> f;
         if (f == 'F'){
@@ -49,11 +47,5 @@ int main() {
             var_bucle = 1;}
 
     }
-
-
-
-
-
-
     return 0;
 }

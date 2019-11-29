@@ -21,10 +21,23 @@ size_t pedir_posicion(string label, string label_2, size_t colum, size_t fil){
 }
 Crobot::Crobot(size_t pos_i): _pos_i(pos_i) {
 }
+void Crobot::moverse(Crobot robot, size_t *pubica) {
+    switch(robot){
+        case r1:
+            while (pos_i1=*ub_producto){
+                if(pos_i1+1!=&pos_i2 && pos_i1!=pos_i3)
+                    pos_i1+=1;
+                else
+                    pos_i1+=2;
+            }
 
-//numero_t Crobot::posicion_r() {
-//    return vector<vector<numero_t  posicion;
-//}
+            break;
+        case r2:
+            break;
+        case r3:
+            break;
+    }
+}
 
 //void Crobot::moverse(vector<vector<numero_t >> *ub_producto, vector<vector<numero_t >> pos_inicial) {
 //    while (robot1.posicion_r()!=*ub_producto){
