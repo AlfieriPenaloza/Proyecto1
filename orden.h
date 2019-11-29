@@ -8,15 +8,17 @@
 #include "tipos.h"
 class Corden{
 private:
-    cod_t codigo;
+    cod_t codigo_prod;
     numero_t cantidad;
-    numero_t *pubica=distr;
+    numero_t *pubica;
 
 public:
     Corden();
-    void pedir_datos(cod_t codigo);
-    void buscar_ubicacion(numero_t *pubica);
-    numero_t entregar_ubicacion(numero_t *pubica);
+    void pedir_datos(cod_t _codigo);
+    void pedir_peso(cod_t peso);
+    void buscar_ubicacion(numero_t **matriz,numero_t *pubica
+    numero_t filas, numero_t columnas);
+    numero_t entregar_ubicacion(numero_t **matrix,numero_t *pubica);
 
 };
 
